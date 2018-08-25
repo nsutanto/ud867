@@ -10,7 +10,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static junit.framework.Assert.assertNotNull;
+import static android.text.TextUtils.isEmpty;
+import static junit.framework.Assert.assertTrue;
 
 @RunWith(AndroidJUnit4.class)
 public class EndpointsAsyncTaskTest {
@@ -30,7 +31,6 @@ public class EndpointsAsyncTaskTest {
             e.printStackTrace();
         }
 
-        assertNotNull(result);
+        assertTrue(result, !isEmpty(result));
     }
-
 }
