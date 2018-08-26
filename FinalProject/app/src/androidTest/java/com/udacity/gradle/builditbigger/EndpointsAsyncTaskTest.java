@@ -24,7 +24,7 @@ public class EndpointsAsyncTaskTest {
         EndpointsAsyncTask endpointsAsyncTask = new EndpointsAsyncTask(null);
         endpointsAsyncTask.execute((new Pair<Context, String>(null, "Manfred")));
 
-        String result = null;
+        String result = "";
         try {
             result = endpointsAsyncTask.get();
         } catch (Exception e) {
